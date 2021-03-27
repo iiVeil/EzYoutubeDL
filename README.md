@@ -10,14 +10,14 @@ Only the source to the project, you can compile/run it yourself if you want
 
 ## Dist folder
 
-This folder is meant to be all use, main.exe will be the program inside **be sure to create a shortcut outside**
+This folder is meant to be all use, main.exe will be the program inside
 
 **FFMPEG IS REQUIRED INSIDE DIST FOLDER**
 
 > ### EzYoutubeDL
 >  - dist
 >    - _contents_
->  - Shortcut to main.exe
->  - Completed files will appear here
+>  - EzYoutubeDL (shortcut is made relative by using a command prompt workaround)
+>  - _Completed files will appear here_
 
 
