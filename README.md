@@ -17,7 +17,7 @@ This folder is meant to be all use, main.exe will be the program inside **be sur
 > ### EzYoutubeDL
 >  - dist
 >    - contents
->  - Shortcut to main.py
+>  - Shortcut to main.exe
 >  - Completed files will appear here
 
 
