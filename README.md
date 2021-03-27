@@ -16,7 +16,7 @@ This folder is meant to be all use, main.exe will be the program inside **be sur
 
 > ### EzYoutubeDL
 >  - dist
->    - contents
+>    - _contents_
 >  - Shortcut to main.exe
 >  - Completed files will appear here
 
