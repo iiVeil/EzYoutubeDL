@@ -12,13 +12,13 @@ while True:
 	seed = random.randint(1, 9999)
 	audio = youtube_dl.YoutubeDL(
 		{
-			'outtmpl': f'../a{seed}.%(ext)s',
+			'outtmpl': f'a{seed}.%(ext)s',
 			'format': 'bestaudio/best',
 			'noplaylist' : True
 		})
 	video = youtube_dl.YoutubeDL(
 		{
-			'outtmpl': f'../v{seed}.%(ext)s',
+			'outtmpl': f'v{seed}.%(ext)s',
 				'format': 'bestvideo/best',
 				'noplaylist': True
 		})
@@ -43,10 +43,10 @@ while True:
 
 
 	print("[finishing] Combining audio and video for best quality.")
-	cmd = f'ffmpeg -y -i "../{audioname_}"  -r 30 -i "../{videoname_}" -filter:a aresample=async=1 -c:a flac -strict -2 -c:v copy "../{meta["id"]}.mp4"'
+	cmd = f'ffmpeg -y -i "{audioname_}"  -r 30 -i "{videoname_}" -filter:a aresample=async=1 -c:a flac -strict -2 -c:v copy "{meta["id"]}.mp4"'
 	subprocess.call(cmd, shell=True)
-	os.remove(f"../{audioname_}")
-	os.remove(f"../{videoname_}")
+	os.remove(f"{audioname_}")
+	os.remove(f"{videoname_}")
 
 	print(f"\n\nFinished {meta['title']} and saved as {meta['id']}.mp4\n\n")
 
